@@ -25,7 +25,7 @@ export default {
   },
   props: ['favouriteBeers'],
   mounted(){
-    fetch('https://api.punkapi.com/v2/beers').then(response=> response.json())
+    fetch('https://api.punkapi.com/v2/beers?page=1&per_page=50').then(response=> response.json())
     .then(beers=> this.beers= beers)
     .catch(error=> console.log(error))
   },

@@ -4,9 +4,9 @@
     <button v-on:click='handleClick'>Favourite this beer!</button>
     <p><span>Alcohol: </span>{{beer.abv}}%</p>
     <p>Ingredients: </p>
-    <ul>
+    <!-- <ul>
         <li v-for="ingredients in beer['ingredients']"></li>
-    </ul>
+    </ul> -->
     <img :src="beer.image_url" alt="">
 </div>
   
